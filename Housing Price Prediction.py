@@ -8,6 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+#imporing the datasets from different libraries
 from sklearn.datasets import fetch_california_housing
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -121,3 +122,4 @@ plt.title("Actual vs Predicted Prices (Random Forest)")
 plt.show()
 
 print("\n Model training and evaluation completed successfully!")
+
