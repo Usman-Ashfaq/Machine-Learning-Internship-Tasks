@@ -15,7 +15,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 
-# ---------------------------------
+
 # Step 2: Load California Housing Dataset
 # ---------------------------------
 data = fetch_california_housing(as_frame=True)
@@ -26,7 +26,7 @@ print("Dataset Shape:", df.shape)
 print("\nFirst 5 rows:")
 print(df.head())
 
-# ---------------------------------
+
 # Step 3: Data Cleaning & Exploration
 # ---------------------------------
 print("\nChecking for missing values:")
@@ -41,7 +41,7 @@ sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
 plt.title("Feature Correlation Heatmap")
 plt.show()
 
-# ---------------------------------
+
 # Step 4: Split Features (X) and Target (y)
 # ---------------------------------
 X = df.drop('MedHouseVal', axis=1)
@@ -122,4 +122,5 @@ plt.title("Actual vs Predicted Prices (Random Forest)")
 plt.show()
 
 print("\n Model training and evaluation completed successfully!")
+
 
