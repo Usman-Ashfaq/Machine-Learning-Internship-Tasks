@@ -1,8 +1,8 @@
-# ===============================================
-#  IRIS FLOWER CLASSIFICATION
-# ===============================================
 
-# Step 1: Import Required Libraries
+#  IRIS FLOWER CLASSIFICATION
+
+
+# Step 1: Import  Libraries
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -19,7 +19,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 # Step 2: Load Iris Dataset
 # -----------------------------------------------
 iris = load_iris(as_frame=True)
-df = iris.frame  # Convert to DataFrame
+df = iris.frame                   # Convert to DataFrame
 
 print(" Dataset Loaded Successfully!")
 print("Shape:", df.shape)
@@ -104,3 +104,4 @@ results = pd.DataFrame({
 print("\nModel Comparison:\n", results)
 
 print("\nModel Training and Evaluation Completed Successfully!")
+
