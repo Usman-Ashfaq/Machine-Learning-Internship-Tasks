@@ -2,7 +2,7 @@
 #  IRIS FLOWER CLASSIFICATION
 
 
-# Step 1: Import  Libraries
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -15,7 +15,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
-# -----------------------------------------------
+
 # Step 2: Load Iris Dataset
 # -----------------------------------------------
 iris = load_iris(as_frame=True)
@@ -25,7 +25,6 @@ print(" Dataset Loaded Successfully!")
 print("Shape:", df.shape)
 print("\nFirst 5 Rows:\n", df.head())
 
-# -----------------------------------------------
 # Step 3: Data Exploration
 # -----------------------------------------------
 print("\nClass Labels (Target Names):", iris.target_names)
@@ -104,4 +103,5 @@ results = pd.DataFrame({
 print("\nModel Comparison:\n", results)
 
 print("\nModel Training and Evaluation Completed Successfully!")
+
 
