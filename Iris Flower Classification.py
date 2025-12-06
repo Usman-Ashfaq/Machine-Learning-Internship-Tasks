@@ -17,7 +17,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 
 
 # Step 2: Load Iris Dataset
-# -----------------------------------------------
+
 iris = load_iris(as_frame=True)
 df = iris.frame                   # Convert to DataFrame
 
@@ -26,7 +26,7 @@ print("Shape:", df.shape)
 print("\nFirst 5 Rows:\n", df.head())
 
 # Step 3: Data Exploration
-# -----------------------------------------------
+
 print("\nClass Labels (Target Names):", iris.target_names)
 print("\nUnique Target Values:", df['target'].unique())
 
@@ -103,5 +103,6 @@ results = pd.DataFrame({
 print("\nModel Comparison:\n", results)
 
 print("\nModel Training and Evaluation Completed Successfully!")
+
 
 
