@@ -48,14 +48,14 @@ X = df.drop('MedHouseVal', axis=1)
 y = df['MedHouseVal']
 
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
-)
+    X, y, test_size=0.2, random_state=42         #random state is 42 so snswer not chnage
+) 
 
 print(f"\nData split complete: {X_train.shape[0]} training samples, {X_test.shape[0]} test samples")
 
-# ---------------------------------
+
 # Step 5: Train Linear Regression Model
-# ---------------------------------
+
 lr = LinearRegression()
 lr.fit(X_train, y_train)
 
@@ -122,6 +122,7 @@ plt.title("Actual vs Predicted Prices (Random Forest)")
 plt.show()
 
 print("\n Model training and evaluation completed successfully!")
+
 
 
 
