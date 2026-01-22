@@ -77,7 +77,7 @@ rf.fit(X_train, y_train)
 
 y_pred_rf = rf.predict(X_test)
 
-# Evaluate
+# Evaluate and checking the deviation
 mse_rf = mean_squared_error(y_test, y_pred_rf)
 r2_rf = r2_score(y_test, y_pred_rf)
 
@@ -87,7 +87,7 @@ print(f"Mean Squared Error: {mse_rf:.3f}")
 
 # ---------------------------------
 # Step 7: Compare Model Performance
-# ---------------------------------
+
 results = pd.DataFrame({
     'Model': ['Linear Regression', 'Random Forest'],
     'R² Score': [r2_lr, r2_rf],
@@ -111,7 +111,6 @@ plt.xlabel("Importance Score")
 plt.ylabel("Feature")
 plt.show()
 
-# ---------------------------------
 # Step 9: Predict vs Actual (Visualization)
 # ---------------------------------
 plt.figure(figsize=(6, 6))
@@ -122,6 +121,7 @@ plt.title("Actual vs Predicted Prices (Random Forest)")
 plt.show()
 
 print("\n Model training and evaluation completed successfully!")
+
 
 
 
