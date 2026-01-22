@@ -30,8 +30,8 @@ print(df.head())
 # Step 3: Data Cleaning & Exploration
 # ---------------------------------
 print("\nChecking for missing values:")
-print(df.isnull().sum())  # Should be zero
-
+print(df.isnull().sum())  #  sum all rows with null values
+#showing properties of data
 print("\nSummary statistics:")
 print(df.describe())
 
@@ -122,5 +122,6 @@ plt.title("Actual vs Predicted Prices (Random Forest)")
 plt.show()
 
 print("\n Model training and evaluation completed successfully!")
+
 
 
