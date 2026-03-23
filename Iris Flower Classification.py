@@ -34,9 +34,9 @@ sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
 plt.title("Feature Correlation Heatmap")
 plt.show()
 
-# -----------------------------------------------
+# -----------------------------------
 # Step 4: Feature and Target Split
-# -----------------------------------------------
+# ------------------------------------
 X = df.drop('target', axis=1)
 y = df['target']
 
